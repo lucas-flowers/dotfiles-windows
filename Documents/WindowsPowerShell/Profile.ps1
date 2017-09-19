@@ -27,7 +27,7 @@ function Prompt {
 }
 
 &{
-New-PSDrive -Scope Global -PSProvider Registry -Name HKU -Root HKEY_USERS -InformationAction Ignore
+New-PSDrive -Scope Global -PSProvider Registry -Name HKU -Root HKEY_USERS
 New-PSDrive -Scope Global -PSProvider Registry -Name HKCR -Root HKEY_CLASSES_ROOT
 New-PSDrive -Scope Global -PSProvider Registry -Name HKCC -Root HKEY_CURRENT_CONFIG
 } | Out-Null
