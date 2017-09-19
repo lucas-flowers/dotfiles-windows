@@ -4,11 +4,10 @@ Set-PSReadlineOption -EditMode vi -BellStyle None
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 function cfg {
-    git.exe --git-dir="$env:USERPROFILE\winsettings" --work-tree="$env:USERPROFILE" $args
+    git.exe --git-dir="$env:USERPROFILE\dotfiles-windows" --work-tree="$env:USERPROFILE" $args
 }
 
 Set-Alias l 'Get-ChildItem'
-# Set-Alias cfg 'git.exe --g
 
 function ls1 {
     <#
