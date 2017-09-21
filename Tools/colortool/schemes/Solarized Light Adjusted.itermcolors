@@ -2,6 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- base02 -->
 	<key>Ansi 0 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -11,6 +12,7 @@
 		<key>Red Component</key>
 		<real>0.027450980392156862</real>
 	</dict>
+    <!-- red -->
 	<key>Ansi 1 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -20,6 +22,7 @@
 		<key>Red Component</key>
 		<real>0.8274509803921568</real>
 	</dict>
+    <!-- base01 -->
 	<key>Ansi 10 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -29,6 +32,7 @@
 		<key>Red Component</key>
 		<real>0.34509803921568627</real>
 	</dict>
+    <!-- base00 -->
 	<key>Ansi 11 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -38,6 +42,7 @@
 		<key>Red Component</key>
 		<real>0.396078431372549</real>
 	</dict>
+    <!-- base0 -->
 	<key>Ansi 12 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -47,6 +52,7 @@
 		<key>Red Component</key>
 		<real>0.5137254901960784</real>
 	</dict>
+    <!-- violet -->
 	<key>Ansi 13 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -56,6 +62,7 @@
 		<key>Red Component</key>
 		<real>0.4235294117647059</real>
 	</dict>
+    <!-- base1 -->
 	<key>Ansi 14 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -65,6 +72,7 @@
 		<key>Red Component</key>
 		<real>0.5764705882352941</real>
 	</dict>
+    <!-- base3 -->
 	<key>Ansi 15 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -74,6 +82,7 @@
 		<key>Red Component</key>
 		<real>0.9921568627450981</real>
 	</dict>
+    <!-- green -->
 	<key>Ansi 2 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -83,6 +92,7 @@
 		<key>Red Component</key>
 		<real>0.5215686274509804</real>
 	</dict>
+    <!-- yellow -->
 	<key>Ansi 3 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -92,6 +102,7 @@
 		<key>Red Component</key>
 		<real>0.7098039215686275</real>
 	</dict>
+    <!-- blue -->
 	<key>Ansi 4 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -101,6 +112,7 @@
 		<key>Red Component</key>
 		<real>0.14901960784313725</real>
 	</dict>
+    <!-- magenta -->
 	<key>Ansi 5 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -110,6 +122,7 @@
 		<key>Red Component</key>
 		<real>0.8274509803921568</real>
 	</dict>
+    <!-- cyan -->
 	<key>Ansi 6 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -119,6 +132,7 @@
 		<key>Red Component</key>
 		<real>0.16470588235294117</real>
 	</dict>
+    <!-- base2 -->
 	<key>Ansi 7 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -128,6 +142,7 @@
 		<key>Red Component</key>
 		<real>0.9333333333333333</real>
 	</dict>
+    <!-- base03 -->
 	<key>Ansi 8 Color</key>
 	<dict>
 		<key>Blue Component</key>
@@ -137,6 +152,7 @@
 		<key>Red Component</key>
 		<real>0.0</real>
 	</dict>
+    <!-- orange -->
 	<key>Ansi 9 Color</key>
 	<dict>
 		<key>Blue Component</key>

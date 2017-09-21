@@ -1,14 +1,33 @@
 
-# Better tab completion
-Set-PSReadlineOption -EditMode vi -BellStyle None
-Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+# Terminal settings
+Set-PSReadlineOption `
+    -EditMode vi `
+    -ViModeIndicator Cursor `
+    -BellStyle None
 
-function cfg {
-    git.exe --git-dir="$env:USERPROFILE\dotfiles-windows" --work-tree="$env:USERPROFILE" $args
+# Fix some colors for Solarized light
+Set-PSReadlineOption -ForegroundColor DarkCyan Number 
+Set-PSReadlineOption -ForegroundColor Green Member
+Set-PSReadlineOption -ErrorBackgroundColor White
+
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+function Prompt {
+    Write-Host "PS" -NoNewline -ForegroundColor DarkBlue
+    Write-Host " " -NoNewline
+    Write-Host $(Get-Location) -NoNewline -ForegroundColor DarkYellow
+    "> "
 }
 
-Set-Alias l 'Get-ChildItem'
+# PowerShell drives (ignore output from these commands)
+&{
+New-PSDrive -Scope Global -PSProvider Registry -Name HKU -Root HKEY_USERS
+New-PSDrive -Scope Global -PSProvider Registry -Name HKCR -Root HKEY_CLASSES_ROOT
+New-PSDrive -Scope Global -PSProvider Registry -Name HKCC -Root HKEY_CURRENT_CONFIG
+} | Out-Null
 
+# Aliases
+Set-Alias make 'mingw32-make.exe'
+Set-Alias l 'Get-ChildItem'
 function ls1 {
     <#
     .SYNPOSIS
@@ -18,17 +37,7 @@ function ls1 {
     #>
     Get-ChildItem -Name
 }
-
-function Prompt {
-    Write-Host "PS" -NoNewline -ForegroundColor DarkBlue
-    Write-Host " " -NoNewline
-    Write-Host $(Get-Location) -NoNewline -ForegroundColor DarkYellow
-    "> "
+function cfg {
+    git.exe --git-dir="$env:USERPROFILE\dotfiles-windows" --work-tree="$env:USERPROFILE" $args
 }
-
-&{
-New-PSDrive -Scope Global -PSProvider Registry -Name HKU -Root HKEY_USERS
-New-PSDrive -Scope Global -PSProvider Registry -Name HKCR -Root HKEY_CLASSES_ROOT
-New-PSDrive -Scope Global -PSProvider Registry -Name HKCC -Root HKEY_CURRENT_CONFIG
-} | Out-Null
 
