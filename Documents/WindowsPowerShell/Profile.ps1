@@ -5,11 +5,6 @@ Set-PSReadlineOption `
     -ViModeIndicator Cursor `
     -BellStyle None
 
-# Fix some colors for Solarized light
-Set-PSReadlineOption -ForegroundColor DarkCyan Number 
-Set-PSReadlineOption -ForegroundColor Green Member
-Set-PSReadlineOption -ErrorBackgroundColor White
-
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 function Prompt {
     Write-Host "PS" -NoNewline -ForegroundColor DarkBlue
