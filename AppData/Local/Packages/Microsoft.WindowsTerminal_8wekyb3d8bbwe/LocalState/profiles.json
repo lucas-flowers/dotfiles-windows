@@ -15,6 +15,7 @@
             "name": "Ubuntu",
             "source": "Windows.Terminal.Wsl",
             "colorScheme": "Solarized Light",
+            "cursorColor": "#657b83",
             "cursorShape": "filledBox",
             "font": "Noto Mono",
             "startingDirectory": "//WSL$/Ubuntu/home/lucas"
@@ -26,6 +27,7 @@
             "commandline": "powershell.exe",
             "hidden": false,
             "colorScheme": "Solarized Light",
+            "cursorColor": "#657b83",
             "cursorShape": "filledBox",
             "font": "Noto Mono"
         },
@@ -36,6 +38,7 @@
             "commandline": "cmd.exe",
             "hidden": false,
             "colorScheme": "Solarized Light",
+            "cursorColor": "#657b83",
             "cursorShape": "filledBox",
             "font": "Noto Mono"
         },
@@ -45,6 +48,7 @@
             "name": "Azure Cloud Shell",
             "source": "Windows.Terminal.Azure",
             "colorScheme": "Solarized Light",
+            "cursorColor": "#657b83",
             "cursorShape": "filledBox",
             "font": "Noto Mono"
         }
