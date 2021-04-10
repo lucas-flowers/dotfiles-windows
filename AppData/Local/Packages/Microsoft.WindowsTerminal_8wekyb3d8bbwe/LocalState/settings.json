@@ -16,8 +16,10 @@
             "source": "Windows.Terminal.Wsl",
             "colorScheme": "Solarized Light",
             "cursorShape": "filledBox",
-            "font": "Noto Mono",
-            "startingDirectory": "//WSL$/Ubuntu/home/lucas"
+            "font": "Consolas",
+            "fontSize": 11,
+            "startingDirectory": "//WSL$/Ubuntu/home/lucas",
+            "bellStyle": "visual"
         },
         {
             // Make changes here to the powershell.exe profile
@@ -27,7 +29,9 @@
             "hidden": false,
             "colorScheme": "Solarized Light",
             "cursorShape": "filledBox",
-            "font": "Noto Mono"
+            "font": "Consolas",
+            "fontSize": 11,
+            "bellStyle": "visual"
         },
         {
             // Make changes here to the cmd.exe profile
@@ -37,7 +41,9 @@
             "hidden": false,
             "colorScheme": "Solarized Light",
             "cursorShape": "filledBox",
-            "font": "Noto Mono"
+            "font": "Consolas",
+            "fontSize": 11,
+            "bellStyle": "visual"
         },
         {
             "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -46,7 +52,9 @@
             "source": "Windows.Terminal.Azure",
             "colorScheme": "Solarized Light",
             "cursorShape": "filledBox",
-            "font": "Noto Mono"
+            "font": "Consolas",
+            "fontSize": 11,
+            "bellStyle": "visual"
         }
     ],
 
